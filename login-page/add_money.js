@@ -21,6 +21,14 @@ document.getElementById('btn-add-money')
 
         const addAmount = document.getElementById('add_money_amount').value;
         const addPin = document.getElementById('amount').value;
-        const addMoneyMinBalancr = document.getElementById('add_money_min_balence').innerText;
-    
+        const addMoneyMinBalance = document.getElementById('add_money_min_balence').innerText;
+
+        // converted area 
+        if ()
+            const convertedaddAmount = parseFloat(addAmount);
+        const convertedaddPin = parseFloat(addPin);
+        const convertedaddMoneyMinBalance = parseFloat(addMoneyMinBalance);
+
+
+
     })
