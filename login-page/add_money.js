@@ -29,16 +29,20 @@ document.getElementById('btn-add-money')
         const convertedaddPin = parseFloat(addPin);
         const convertedaddMoneyMinBalance = parseFloat(addMoneyMinBalance);
         // console.log(convertedaddAmount, convertedaddPin, addNumber);
-        if (addNumber.length === 11 && addNumber.startsWith("01") && convertedaddPin === 1234) {
+        if (addNumber.length === 11 && addNumber.startsWith("01")) {
 
-            alert('successful add money🎉');
-            const sum = convertedaddAmount + convertedaddMoneyMinBalance;
-            document.getElementById('add_money_min_balence').innerText = sum;
+            if (convertedaddPin === 1234) {
+                alert('successful add money🎉');
+                const sum = convertedaddAmount + convertedaddMoneyMinBalance;
+                document.getElementById('add_money_min_balence').innerText = sum;
+            } else {
+                alert('incorrect pin');
+            }
 
         }
 
         else {
-            alert('invalid ');
+            alert('invalid number ');
         }
 
 
