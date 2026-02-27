@@ -29,6 +29,8 @@ document.getElementById('btn-add-money')
         const convertedaddPin = parseFloat(addPin);
         const convertedaddMoneyMinBalance = parseFloat(addMoneyMinBalance);
         // console.log(convertedaddAmount, convertedaddPin, addNumber);
+
+        // condition area 
         if (addNumber.length === 11 && addNumber.startsWith("01")) {
 
             if (convertedaddPin === 1234) {
