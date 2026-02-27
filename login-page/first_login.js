@@ -9,19 +9,19 @@ document.getElementById('btn-login')
         const pinNmber = document.getElementById('input-pin');
 
         const convertedNumber = parseInt(acountNumber);
-        const convertePin = parseInt(pinNmber);
+        const convertedPin = parseInt(pinNmber);
 
-        if (convertedNumber === 11) {
+        if (convertedNumber.length === 11) {
 
-            if (convertePin === 1234) {
-                alert('successfull login 🎉');
+            if (convertedPin === 1234) {
+                alert('Successful Login 🎉');
             }
             else {
-                alert('incorrct your pin');
+                alert('Incorrect PIN');
             }
         }
 
         else {
-            alert('incorrct your number')
+            alert('Incorrect Number')
         }
     })
