@@ -3,4 +3,8 @@ document.getElementById('btn-login')
 
         // alert()
         event.preventDefault();
+
+        const acountNumber = document.getElementById('input-number').value;
+        // console.log(typeof acountNumber); 
+        const pinNmber = document.getElementById('')
     })
