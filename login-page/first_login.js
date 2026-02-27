@@ -1,2 +1,4 @@
 document.getElementById('btn-login')
-.addEventListener('')
+    .addEventListener('click', function (event) {
+        event.preventDefault();
+    })
