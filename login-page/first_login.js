@@ -15,7 +15,7 @@ document.getElementById('btn-login')
             const convertedPin = parseInt(pinNmber);
             if (convertedPin === 1234) {
                 alert('Successful Login 🎉');
-                window.location = "min.html";
+                window.location.href = "min.html";
 
             }
             else {
