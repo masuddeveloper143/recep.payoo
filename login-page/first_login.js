@@ -6,15 +6,17 @@ document.getElementById('btn-login')
 
         const acountNumber = document.getElementById('input-number').value;
         // console.log(typeof acountNumber); 
-        const pinNmber = document.getElementById('input-pin');
+        const pinNmber = document.getElementById('input-pin').value;
 
-        const convertedNumber = parseInt(acountNumber);
-        const convertedPin = parseInt(pinNmber);
 
-        if (convertedNumber.length === 11) {
 
+
+        if (acountNumber.length === 11 && acountNumber.startsWith("01")) {
+            const convertedPin = parseInt(pinNmber);
             if (convertedPin === 1234) {
                 alert('Successful Login 🎉');
+                window.location = "min.html";
+
             }
             else {
                 alert('Incorrect PIN');
