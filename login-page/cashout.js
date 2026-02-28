@@ -6,9 +6,9 @@ document.getElementById('cashout_btn')
 
         // input value
 
-        const cashoutNumber = document.getElementById('cashout_number');
-        const cashoutAmount = document.getElementById('cashout_amount');
-        const cashoutPin = document.getElementById('cashout_pin');
+        const cashoutNumber = document.getElementById('cashout_number').value;
+        const cashoutAmount = document.getElementById('cashout_amount').value;
+        const cashoutPin = document.getElementById('cashout_pin').value;
         const cashoutMinBalance = document.getElementById('add_money_min_balence').innerText;
 
         // coverted area
@@ -19,8 +19,15 @@ document.getElementById('cashout_btn')
 
         if (cashoutNumber.length === 11 && cashoutNumber.startsWith("01")) {
 
-            console.('number is oky');
+            if (convertedcashoutPin === 1234) {
+                alert('successful CASHOUT🎉');
+                const sum = convertedcashoutMinBalance - converdcashoutAmount;
+                document.getElementById('add_money_min_balence').innerText = sum;
+            } else {
+                alert('incorrect PIN');
+            }
         }
+
         else {
             alert('incorrect number');
         }
